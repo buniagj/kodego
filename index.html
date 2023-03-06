@@ -70,7 +70,7 @@
         .question {
             background-color: #857C8D;
             margin: 0 100px;
-            height: 50vh;
+            height: fit-content;
             padding: 20px;
         }
         .accordion-item {
@@ -78,7 +78,7 @@
             padding: 5px;
         }
         .accordion-body {
-            height: 5rem;
+            height:fit-content;
             align-items: center;
             font-size: larger;
             font-weight: 500;
@@ -116,8 +116,8 @@
     <div class="testimonials p-5">
         <div class="container">
             <div class="row text-center">
-                <div class="glow mb-3" >
-                    <h1 data-text="&nbsp;Here are some of the satisfied and Juliafied customers!&nbsp;">&nbsp;Here are some of the satisfied and Juliafied customers!&nbsp;</h1> 
+                <div class="glow mb-3 text-wrap" >
+                    <h1 data-text="&nbsp;Juliafied Customers&nbsp;">&nbsp;Juliafied Customers&nbsp;</h1> 
                 </div>
                     <div class="col-md">
                         <div id="carousel2023" class="carousel slide carousel-fade">
@@ -287,6 +287,7 @@
     <div class="question">
         <h1 class="text-lead text-center">FREQUENTLY ASKED QUESTIONS</h1>
             <div class="accordion accordion-flush" id="FAQ">
+              <!-- Question 1 -->
                 <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -296,6 +297,7 @@
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#FAQ">
                     <div class="accordion-body">Julia specializes in hair rebonding, brazilian blowout, keratin treatment, and hair coloring of any of your choosing.</div>
                 </div>
+                <!-- Question 2 -->
                 </div>
                 <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingTwo">
@@ -306,6 +308,7 @@
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#FAQ">
                     <div class="accordion-body">The hair stylist is so considerate that she didn't fix any price for any service. Note that she will consider the length of your hair,the frequency of service (if you are a first-time or repeat customer), and even your economic status!</div>
                 </div>
+                <!-- Question 3 -->
                 </div>
                 <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingThree">
@@ -316,6 +319,7 @@
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#FAQ">
                     <div class="accordion-body"> No, there isn't. However, should you wish to have your service prioritized during the peak season, we have a priority fee of Php200.  </div>
                 </div>
+                <!-- Question 4 -->
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingFour">
@@ -324,8 +328,9 @@
                         </button>
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#FAQ">
-                        <div class="accordion-body"></div>It depends on the season. The peak season is usually in the months of September to December. It is better to contact us first as soon as you find out about us because if you are requiring an urgent service, you will need to pay priority fee of Php200.
+                        <div class="accordion-body">It depends on the season. The peak season is usually in the months of September to December. It is better to contact us first as soon as you find out about us because if you are requiring an urgent service, you will need to pay priority fee of Php200.</div>
                     </div>
+                    <!-- Question 5 -->
                     </div>
                 <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingFive">
@@ -340,6 +345,16 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2023 Touch of Julia </p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle text-white h1"></i>
+        </a>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
