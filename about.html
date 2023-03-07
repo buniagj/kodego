@@ -6,15 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Touch of Julia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./mp1.css">
     <style>
-        body::before {
-            display: block;
-            content: "";
-            height: 60px;
-        }
-        .navbar-brand img {
-            border-radius: 100%;
+        html, body {
+          height: auto;
+          width: auto;
+          position: relative;
         }
 
         body {
@@ -35,17 +32,43 @@
         #team .social img {
             height: 2rem;
             width: 2rem;
+            object-fit: cover;
         }
 
+        .p-5 {
+            height: 100vh;
+        }
         iframe {
             border-radius: 10px;
+            height: 100%;
+            width: 100%;
+      
         }
 
         @media (min-width: 992px){
             .map {
                 height: 700;
                 width: 655;
-            }           
+            }       
+                
+        }
+
+        @media only screen and (max-width: 600px) {
+            html, body {
+                height: 440vh;
+            }
+            .list-group-item {
+                font-size: small;
+            }
+        }
+
+        @media  (min-width: 768px) and (max-width: 991px) {
+            html, body {
+                height: 280vh;
+            }
+            .list-group-item {
+                font-size: small;
+            }
         }
     </style>
 </head>
@@ -81,10 +104,9 @@
                             <img src="./images/profile1.png" class="rounded-circle mb-3"/>
                             <h3 class="card-title mb3"> Julia Carlos</h3> 
                             <p class="card-text">Hair Stylist & Make Up Artist</p>
-                            <a href="https://www.facebook.com/imjuliafied"><i class="social"><img src="./images/fb.png"></i></a>
-                            <a href="https://www.instagram.com/touchofjulia/"><i class="social"><img src="./images/ig.png"></i></a>
-                            <a href="https://www.youtube.com/@juliacarlos3721"><i class="social"><img src="./images/yt.png"></i></a>
-                            <a href="https://www.tiktok.com/@juliacarlos_25"><i class="social"><img src="./images/tiktok.png"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100079848248941" target="_blank"><i class="social"><img src="./images/fb.png"></i></a>
+                            <a href="https://www.youtube.com/@juliacarlos3721" target="_blank"><i class="social"><img src="./images/yt.png"></i></a>
+                            <a href="https://www.tiktok.com/@juliacarlos_25" target="_blank"><i class="social"><img src="./images/tiktok.png"></i></a>
                         </div>
                     </div>
                 </div>
@@ -95,23 +117,19 @@
                             <img src="./images/jeanly.png" class="rounded-circle mb-3"/>
                             <h3 class="card-title mb3"> Jeanly Dacudag</h3> 
                             <p class="card-text">Assistant Hair Stylist</p>
-                            <a href="https://www.facebook.com/profile.php?id=100087333264290"><i class="social"><img src="./images/fb.png"></i></a>
-                            <a href="https://www.tiktok.com/@jeanlydacudag"><i class="social"><img src="./images/tiktok.png"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100087333264290" target="_blank"><i class="social"><img src="./images/fb.png"></i></a>
+                            <a href="https://www.tiktok.com/@jeanlydacudag" target="_blank"><i class="social"><img src="./images/tiktok.png"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- #443737 -->
                 <div class="col-md-6 col-lg-3">
                     <div class="card bg-light">
                         <div class="card-body text-center">
                             <img src="./images/kitkat.png" class="rounded-circle mb-3"/> 
                             <h3 class="card-title mb3"> Kit-kat Lutap</h3> 
                             <p class="card-text">Assistant Hair Stylist</p>
-                            <a href="https://www.facebook.com/anakatrina.lutap.comorposa"><i class="social"><img src="./images/fb.png"></i></a>
-                            <a href="#"><i class="social"><img src="./images/ig.png"></i></a>
-                            <a href="#"><i class="social"><img src="./images/yt.png"></i></a>
-                            <a href="#"><i class="social"><img src="./images/tiktok.png"></i></a>
+                            <a href="https://www.facebook.com/anakatrina.lutap.comorposa" target="_blank"><i class="social"><img src="./images/fb.png"></i></a>
                         </div>
                     </div>
                 </div>
@@ -122,10 +140,10 @@
                             <img src="./images/jean.png" class="rounded-circle mb-3"/>
                             <h3 class="card-title mb3"> Jean Buniag</h3> 
                             <p class="card-text">Social Media Manager</p>
-                            <a href="#"><i class="social"><img src="./images/fb.png"></i></a>
-                            <a href="#"><i class="social"><img src="./images/ig.png"></i></a>
-                            <a href="#"><i class="social"><img src="./images/yt.png"></i></a>
-                            <a href="#"><i class="social"><img src="./images/in.png"></i></a>
+                            <a href="#" target="_blank"><i class="social"><img src="./images/fb.png"></i></a>
+                            <a href="#" target="_blank"><i class="social"><img src="./images/ig.png"></i></a>
+                            <a href="#" target="_blank"><i class="social"><img src="./images/yt.png"></i></a>
+                            <a href="#" target="_blank"><i class="social"><img src="./images/in.png"></i></a>
                         </div>
                     </div>
                 </div>
@@ -134,53 +152,75 @@
     </section>
 
  <!-- Contact Info and Map -->
- <section class="p-5">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-md">
-                <h2 class="text-center text-white mb-4"> Contact Info</h2>
-                <ul class="list-group list-group-flush lead">
-                    <li class="list-group-item">
-                        <span class="fw-bold"> Main Location
-                        </span> Purok 3 Brgy. Atate,  Palayan City,  Nueva Ecija 3132
-                    </li>
-                    <li class="list-group-item">
-                        <span class="fw-bold"> Mobile Number
-                        </span> (Julia) +63 967 428 9415
-                    </li>
-                    <li class="list-group-item">
-                        <span class="fw-bold"> Mobile Number
-                        </span> (Jeanly) +63 907 204 4104
-                    </li>
-                    <li class="list-group-item">
-                        <span class="fw-bold"> Mobile Number
-                        </span> (Kit-kat) +63 977 697 3174
-                    </li>
-                    <li class="list-group-item">
-                        <span class="fw-bold"> Mobile Number
-                        </span> (Jean) +63 970 158 3342
-                    </li>
-                    <li class="list-group-item">
-                        <span class="fw-bold"> Landline
-                        </span> (02) 559 7769
-                    </li>
-                    <li class="list-group-item">
-                        <span class="fw-bold"> Email Address
-                        </span> dacudagj@gmail.com
-                    </li>
-                    <li class="list-group-item">
-                        <span class="fw-bold"> Email Address
-                        </span> cyberjulia_25@gmail.com
-                    </li>
-                </ul>
-            </div>
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
                 <div class="col-md">
-                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12432.44364120522!2d121.11234909215248!3d15.565319649463019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339732e152b52b35%3A0xc23f992ac9ad944f!2sAtate%20Barangay%20Hall!5e0!3m2!1sen!2sph!4v1678077937309!5m2!1sen!2sph" width="700" height="465" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h2 class="text-center text-white mb-4"> Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold"> Main Location
+                            </span> Purok 3 Brgy. Atate,  Palayan City,  Nueva Ecija 3132
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold"> Mobile Number
+                            </span> (Julia) +63 967 428 9415
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold"> Mobile Number
+                            </span> (Jeanly) +63 907 204 4104
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold"> Mobile Number
+                            </span> (Kit-kat) +63 977 697 3174
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold"> Mobile Number
+                            </span> (Jean) +63 970 158 3342
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold"> Landline
+                            </span> (02) 559 7769
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold"> Email Address
+                            </span> dacudagj@gmail.com
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold"> Email Address
+                            </span> cyberjulia_25@gmail.com
+                        </li>
+                    </ul>
                 </div>
+                    <div class="col-md">
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12432.44364120522!2d121.11234909215248!3d15.565319649463019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339732e152b52b35%3A0xc23f992ac9ad944f!2sAtate%20Barangay%20Hall!5e0!3m2!1sen!2sph!4v1678077937309!5m2!1sen!2sph" width="700" height="465" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
+<!-- Footer -->
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/imjuliafied/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/touchofjulia/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.youtube.com/@juliacarlos3721" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="https://www.tiktok.com/@juliacarlos_25" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="./index.html" class="nav-link">Home</a></li>
+            <li><a href="./about.html" class="nav-link">About Us</a> </li>
+            <li><a href="./services.html" class="nav-link">Services</a></li>
+            <li><a href="./contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+        <p>&copy; 2023    Touch of Julia   |   All Rights Reserved</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
