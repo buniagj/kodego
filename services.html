@@ -29,7 +29,27 @@
             object-fit: cover;
         }
 
-        @media only screen and (max-width: 600px) {
+        @media (min-width: 320px) and (max-width: 480px) {
+            html, body {
+                height: 360vh;
+            }
+            #service {
+                padding: 1rem;
+            }
+            #service .card {
+                height: 70vh;
+            }
+            footer {
+                font-size: small;
+                padding: 0;
+                margin: 0;
+            }
+            footer .menu li a {
+                font-size: small;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 600px) {
             html, body {
                 height: 340vh;
             }

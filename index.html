@@ -10,17 +10,24 @@
     <style>
         @import url(https://fonts.googleapis.com/css?family=Labrada:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
         
+        html, body {
+          background-image:url(./images/bg.jpg);
+          background-size:cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+        }
         .hero img{
+          position: relative;
+          margin: auto;
+          display: flex;
+          justify-content: center;
             width: 100vw;
             height: 90vh;
         }
-
-        .testimonials {
-            background-color:#61304B ;
-        }
         .testimonials h2{
             color: aliceblue;
-            margin-top: 2rem;
+            margin-top: 1rem;
+            background-blend-mode: luminosity;
         }
         #carousel2021 img, #carousel2022 img, #carousel2023 img {
             border-radius: 10px;
@@ -58,11 +65,9 @@
             }
         }
         .asked {
-            background-color: #857C8D;  
             height: 98vh;
         }
         .question {
-            background-color: #857C8D;
             margin: 0 100px;
             height: fit-content;
             padding: 20px;
@@ -84,18 +89,71 @@
             font-style: italic;
         }
 
-        @media only screen and (max-width: 600px) {
+        @media (min-width: 320px) and (max-width: 480px) {
+          html, body {
+            height: 415vh;
+          }
+
+          .hero img {
+            height: 40vh;
+          }
+          .glow h1 {
+            margin: 0;
+            font-size: 1.5rem;
+          }
+          @keyframes animate {
+              0%, 10%
+              {
+                  width: 0;
+              }
+              100% {
+                width: 70%;
+              }
+            }
+            #carousel2021 img, #carousel2022 img, #carousel2023 img {
+              height: 30rem;
+            }
+            .testimonials {
+              padding: 1rem 2rem 0 2rem !important;
+              margin: 0 !important;
+            }
+
+            .testimonials h2{
+              padding: 1rem 0 3rem 0;
+              margin: 0 !important;
+            }
+            .asked {
+              height: 100vh;
+              padding: 0 !important;
+              margin: 0 !important;
+            }
+            .question {
+              margin: 0;
+            }
+            .text-lead {
+              padding: 0 !important;
+            }
+            .accordion-body {
+              font-size: small;
+            }
+            footer {
+              font-size: small;
+            }
+            footer .menu li a {
+              font-size: small;
+            }
+        }
+        @media (min-width: 481px) and (max-width: 600px) {
             html, body {
-              height: 450vh;
+              height: 405vh;
             }
             .hero img{
-              height: 50vh;
+              height: 45vh;
             }
             #carousel2021 img, #carousel2022 img, #carousel2023 img {
               height: 30rem;
             }
             .asked {
-              background-color: #857C8D;  
               height: 120vh;
             }
             .accordion-body {
@@ -105,29 +163,66 @@
               color: aliceblue;
               margin: 1rem 0 3rem 0;
             }
+            .glow h1 {
+            margin: 0;
+            font-size: 1.5rem;
+          }
             @keyframes animate {
               0%, 10%
               {
                   width: 0;
               }
               100% {
-                width: 100%;
+                width: 70%;
               }
+            }
+            .testimonials {
+              padding: 1rem 2rem 0 2rem !important;
+              margin: 0 !important;
+            }
+
+            .testimonials h2{
+              padding: 1rem 0 3rem 0;
+              margin: 0 !important;
+            }
+            .asked {
+              height: 100vh;
+              padding: 0 !important;
+              margin: 0 !important;
+            }
+            .question {
+              margin: 0;
+            }
+            .text-lead {
+              padding: 0 !important;
+            }
+            .accordion-body {
+              font-size: small;
+            }
+            footer {
+              font-size: small;
+            }
+            footer .menu li a {
+              font-size: small;
             }
           }
   
         @media (min-width: 768px) and (max-width: 991px) {
           body {
-              height: 270vh;
+              height: 290vh;
             }
             .hero img{
-              height: 60vh;
+              height: 70vh;
+            }
+            .testimonials {
+              padding: 1rem 2rem 0 2rem !important;
+              margin: 0 !important;
             }
             #carousel2021 img, #carousel2022 img, #carousel2023 img {
-              height: 20rem;
+              height: 30rem;
+              width: 20rem;
             }
             .asked {
-              background-color: #857C8D;  
               height: 120vh;
             }
             .accordion-body {
@@ -347,7 +442,7 @@
 <!-- FAQs -->
 <section class="asked"> 
     <div class="question">
-        <h1 class="text-lead text-center">FREQUENTLY ASKED QUESTIONS</h1>
+        <h1 class="text-lead text-center text-white">FREQUENTLY ASKED QUESTIONS</h1>
             <div class="accordion accordion-flush" id="FAQ">
               <!-- Question 1 -->
                 <div class="accordion-item">
@@ -416,18 +511,22 @@
           <div class="wave" id="wave3"></div>
           <div class="wave" id="wave4"></div>
       </div>
-      <ul class="social">
-        <li><a href="https://www.facebook.com/imjuliafied/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
-        <li><a href="https://www.instagram.com/touchofjulia/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-        <li><a href="https://www.youtube.com/@juliacarlos3721" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a></li>
-        <li><a href="https://www.tiktok.com/@juliacarlos_25" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a></li>
-      </ul>
-      <ul class="menu">
-          <li><a href="./index.html" class="nav-link">Home</a></li>
-          <li><a href="./about.html" class="nav-link">About Us</a> </li>
-          <li><a href="./services.html" class="nav-link">Services</a></li>
-          <li><a href="./contact.html" class="nav-link">Contact Us</a></li>
-      </ul>
+      <div>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/imjuliafied/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="https://www.instagram.com/touchofjulia/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="https://www.youtube.com/@juliacarlos3721" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a></li>
+          <li><a href="https://www.tiktok.com/@juliacarlos_25" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="menu">
+            <li><a href="./index.html" class="nav-link">Home</a></li>
+            <li><a href="./about.html" class="nav-link">About Us</a> </li>
+            <li><a href="./services.html" class="nav-link">Services</a></li>
+            <li><a href="./contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </div>
       <p>&copy; 2023    Touch of Julia   |   All Rights Reserved</p>
       </footer>
 

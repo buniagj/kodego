@@ -25,7 +25,7 @@ footer {
     background: #EE6F93;
     filter: opacity(1);
     border-color: #EE6F93;
-    min-height: 100px;
+    min-height: 2.5rem;
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -65,6 +65,9 @@ footer .menu li a {
     display: inline-block;
     text-decoration: none;
     opacity: 0.75;
+    text-align: center;
+    margin-block-start: 0;
+    padding-inline-start: 0;
  }
 
 footer .menu li a:hover {

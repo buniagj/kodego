@@ -27,38 +27,92 @@
             width: auto;
             
         }
-        @media only screen and (max-width: 600px) {
-            section {
-                margin: 3rem 1rem 10rem 1rem;
-                height: 190vh;
+
+        .container-sm {
+                background-color: #E5C2C0;
+                    filter: opacity(.8);
+                border-radius: 10px;
+                padding: 50px;
+                justify-content: center;
+                margin: auto;
+                width:100%;
             }
             .text {
-                font-size: 20px;
+                padding: 10px;
+                font-size: 60px;
+                color: #3D0C11;
+                font-family: Labrada;
+            }
+
+            #content-wrap {
+                padding-bottom: 2.5rem;
+            }
+
+        @media (min-width: 320px) and (max-width: 480px) {
+            html, body {
+                width: auto;
+                height: 500vh;
+            }
+            section {
+                margin-top: 3rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+                margin-bottom: 0;
+            }
+            .container-sm .text {
+                font-size: 30px;
+            }
+            footer {
+                font-size: small;
                 padding: 0;
+                margin: 0;
+            }
+            footer .menu li a {
+                font-size: small;
             }
         }
 
-        @media only screen and (min-width: 768px) and (max-width: 991px){
-            section {
-                margin: 3rem 1rem 10rem 1rem;
-                height: 110vh;
+        @media (min-width: 481px) and (max-width: 600px) {
+            html, body {
+                height: 250vh;
+            }
+            .container-sm {
+                margin-top: 2rem 0 0 0 !important;
+                height: 140vh;
+            }
+            .container-sm .text {
+                font-size: 40px;
+            }
+            footer {
+                font-size: small;
+            }
+            footer .menu li a {
+                font-size: small;
             }
         }
-        .container-sm {
-            background-color: #E5C2C0;
-                filter: opacity(.8);
-            border-radius: 10px;
-            padding: 50px;
-            justify-content: center;
-            margin: auto;
-            width:100%;
+
+        @media (min-width: 768px) and (max-width: 991px){
+            html, body {
+                width: 100vw;
+                height: 150vh;
+            }
+            .container-sm {
+                margin-top: 2rem 0 0 0 !important;
+                width: 90vw;
+                height: 85vh;
+            }
+            .container-sm .text {
+                font-size: 50px;
+            }
+            footer {
+                margin: 0 !important;
+                font-size: small;
+            }
+            footer .menu li a {
+                font-size: small;
+            }
         }
-        .text {
-            padding: 10px;
-            font-size: 60px;
-            color: #3D0C11;
-            font-family: Labrada;
-         }
+            
 
     </style>
 </head>
@@ -222,7 +276,7 @@
         </div>
     </section>
 
-    
+    <!-- Footer -->
     <footer>
         <div class="waves">
             <div class="wave" id="wave1"></div>
