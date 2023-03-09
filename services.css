@@ -72,6 +72,6 @@ html, body {
 
 @media (min-width: 1200px) {
     #service .card {
-        height: 100vh;
+        height: 90vh;
     }
 }
