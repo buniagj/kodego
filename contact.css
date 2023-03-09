@@ -4,10 +4,10 @@ html, body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: fit-content;
-    width: fit-content;
+    width: auto;
 }
 
-nav {
+nav { 
     margin-bottom: 50rem;
 }
 section {
