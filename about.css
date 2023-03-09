@@ -55,7 +55,7 @@ html, body {
           object-fit: cover;
       }
       .p-5 {
-        padding: 0 0 5rem 0 !important;
+        padding: 0 0 20rem 0 !important;
       }
 
       .list-group-item {
