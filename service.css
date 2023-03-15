@@ -205,6 +205,10 @@ h2, h3 {
         margin: 0 1rem;
     }
     
+    .container {
+        transform: translateZ(0);
+    }
+    
     footer {
         font-size: small;
         padding: 0;
@@ -232,6 +236,7 @@ h2, h3 {
         height: 30rem;      
         padding: 1rem;
         margin-bottom: 10rem;
+        transform: translateZ(0);
     }
 
     footer {
