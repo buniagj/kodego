@@ -7,14 +7,14 @@
 }
 
 body {
+    height: fit-content;
+    width: 100vw;
+    margin: 0 !important;
     background-image: url(./images/whitepaint.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: fit-content;
-    height: fit-content;
-    width: 100vw;
-    margin: 0 !important;
 }
 section {
     height: 65vh;
@@ -27,6 +27,15 @@ section {
     gap: 1rem;
 }
 
+h1 {
+    background-image: url(./images/hairflow.mp4);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
 .navbar {
     padding: 0 2rem;
 }
@@ -37,6 +46,7 @@ section {
     perspective: 500px;
     padding: 1rem;
 }
+
 
 .card   {
     height: 100%;
@@ -54,11 +64,14 @@ section {
     box-shadow: 0 20px 20px rgba(50, 60, 60, 0.2);
 }
 
+.front {
+    border-radius: 20px 0;
+}
+
 .front, .back {
     position: absolute;
     height: 100%;
     width: 100%;
-    border-radius: 0 20px;
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     backface-visibility: hidden;
     display: flex;
@@ -170,6 +183,7 @@ h2, h3 {
     background-color: #91818A;
     transform: rotateY(180deg);
     align-items: center;
+    border-radius: 0 20px;
 }
 
 .back p {
@@ -177,4 +191,55 @@ h2, h3 {
     font-size: large;
     text-align: center;
     padding: 1rem;
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+    html, body {
+        height: auto;
+    }
+    section {
+        display: flex !important;
+        flex-direction: column !important;
+        height: fit-content;
+        padding: 0;
+        margin: 0 1rem;
+    }
+    
+    footer {
+        font-size: small;
+        padding: 0;
+        margin: 0;
+    }
+    footer .menu li a {
+        font-size: small;
+    }
+}
+
+@media (min-width: 599px) and (max-width: 991px) {
+    html, body {
+        height: auto;
+    }
+    section {
+        display: flex !important;
+        flex-direction: column !important;
+        height: fit-content;
+        padding: 0;
+        margin: 0 1rem; 
+    }
+
+    .container {
+        width: 25rem;
+        height: 30rem;      
+        padding: 1rem;
+        margin-bottom: 10rem;
+    }
+
+    footer {
+        font-size: small;
+        padding: 0;
+        margin: 0;
+    }
+    footer .menu li a {
+        font-size: small;
+    }
 }
