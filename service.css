@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes:regular);
+
+* {
+    margin: 0 !important;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: fit-content;
+    width: 100vw;
+    margin: 0 !important;
+}
+section {
+    height: 65vh;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;     
+    align-items:center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.navbar {
+    padding: 0 2rem;
+}
+
+.container {
+    width: 18rem;
+    height: 25rem;
+    perspective: 500px;
+    padding: 1rem;
+}
+
+.card   {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    border-color: transparent;
+    
+}
+
+.container:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 20px rgba(50, 60, 60, 0.2);
+}
+
+.front, .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 20px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: Great Vibes;
+    font-size: 2.5rem;
+    padding: 1rem 1rem 0 1rem;
+    line-height: 2rem;
+}
+
+h3 {
+    padding: 0;
+    line-height: 1rem;
+}
+
+h2, h3 {
+    background: black;
+    color: white;
+    opacity: 0.5;
+    width: 16rem;
+    height: 5rem !important;
+    border-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    inset: 0;
+}
+
+.card:hover h2, .card:hover h3 {
+    transform: translateX(140px);
+    transition: transform 1500ms;
+}
+.organic {
+    background-image: url(./images/rebond.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.milk {
+    background-image: url(./images/milk\ rebond.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.botox {
+    background-image: url(./images/botox.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.blowout {
+    background-image: url(./images/brazilian.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.kera {
+    background-image: url(./images/keracolla.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.brazbond {
+    background-image: url(./images/bazilianrebond.png);
+    background-position: center;
+    background-size: cover;
+}
+.relax {
+    background-image: url(./images/relax.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.reborn {
+    background-image: url(./images/reborn.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.color {
+    background-image: url(./images/haircolor.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.full {
+    background-image: url(./images/full-highlights.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.balayage {
+    background-image: url(./images/balayage.png);
+    background-position: center;
+    background-size: cover;
+}
+.haircut {
+    background-image: url(./images/short.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.back {
+    background-color: #91818A;
+    transform: rotateY(180deg);
+    align-items: center;
+}
+
+.back p {
+    color: white;
+    font-size: large;
+    text-align: center;
+    padding: 1rem;
+}
