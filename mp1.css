@@ -38,7 +38,7 @@ footer .social, footer .menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
+    margin: 10px 0 !important;
     flex-wrap: wrap;
  }
 
@@ -49,7 +49,7 @@ footer .social li, footer .menu li{
 footer .social li a {
     font-size: 2rem;
     color: white;
-    margin: 0 10px;
+    margin: 0 10px !important;
     display: inline-block;
     transition: 0.5s;
  }
