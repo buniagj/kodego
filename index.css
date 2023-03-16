@@ -1,29 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Labrada:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
         
         html, body {
-          background-image:url(./images/bg.jpg);
+          background-image: url(./images/bg1.jpg);
           background-size:cover;
           background-repeat: no-repeat;
           background-attachment: fixed;
+          height: fit-content;
           width: 100vw;
           height: fit-content;
           }
 
         .hero img{
-            height: 70vh;
-        }
-        .hero img{
-          position: relative;
-          margin: auto;
           display: flex;
           justify-content: center;
-            width: 100vw;
-            height: 90vh;
+          align-items: center ;
+          width: 100vw;
+          height: 50vh;
+          padding: 3rem 3rem 0 3rem;
         }
         .testimonials h2{
             color: aliceblue;
             margin-top: 1rem;
-            background-blend-mode: luminosity;
+            background-blend-mode: luminosity;    
         }
         #carousel2021 img, #carousel2022 img, #carousel2023 img {
             border-radius: 10px;
@@ -169,12 +167,12 @@
               }
             }
         }
-            @media (min-width: 1200px) {
+            @media (min-width: 1000px) {
                 .hero img{
-                    height: 100vh;
+                    height: 90vh;
                 }
                 .asked {
-                    height: 125vh;
+                    height: 130vh;
             }
         }
             
